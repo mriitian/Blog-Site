@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Add your new blog</h2>
+  
+  <form action="/submit" method="POST">
+    <div class="form-floating mb-3 mt-3">
+      <input type="text" class="form-control" id="email" placeholder="Enter email" name="blogTitle">
+      <label for="email">Title Heading</label>
+    </div>
+    <div class="form-floating mt-3 mb-3">
+      <input type="text" class="form-control" id="pwd" rows="5" placeholder="Enter password" name="describes">
+      <label for="pwd">Title Description</label>
+    </div>
+    <label for="comment">Content:</label>
+	<textarea class="form-control mb-3" rows="5" id="comment" name="blogContent"></textarea>
+    <button type="submit" class="btn btn-primary blog-submit" value="ok">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
